@@ -21,7 +21,6 @@ module ALU_ctrl(Funct, ALU_OP, ALU_Ctrl_Out);
 	//    00     XXXXXX     0010     //
 	///////////////////////////////////
 	
-	/* add your code here */
       reg [3:0] ALU_Ctrl_Out;
 
       always @(*)
