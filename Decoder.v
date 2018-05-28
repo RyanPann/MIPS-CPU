@@ -26,7 +26,6 @@ module Decoder(OP, Reg_Dst, Jump, Branch, Mem_Read, Mem_to_Reg, ALU_OP, Mem_Writ
 	//  else   00  //
 	/////////////////
 	
-	/* add your code here */
 	reg ALU_Src, Reg_Write, Jump, Branch;
 	reg [1:0] ALU_OP; 
 
