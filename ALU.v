@@ -15,6 +15,6 @@ module ALU(Source1, Source2, ALU_Ctrl, Result, Zero);
 	/////////////////
 	
 	assign Result = ALU_Ctrl[0] ? ((Source1 < Source2) ? 1 : 0) : (ALU_Ctrl[2] ? Source1 - Source2 : (ALU_Ctrl[1] ? Source1 + Source2 : Source1));
-	assign Zero = /* add your code here */  (Result == 0) ? 1 : 0;
+	assign Zero = (Result == 0) ? 1 : 0;
 
 endmodule
