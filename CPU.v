@@ -101,15 +101,15 @@ module CPU(CLK, START);
 	assign Address = ALU_Result;
 	
 	//MUXs net assignment
-	assign Jump_Address = /*add your code here*/ Instr[15:0];
+	assign Jump_Address = Instr[15:0];
 	
 	//Adders net assignment
-	assign PC_Count_Add_Src1 = /*add your code here*/ PC_Out;
-	assign PC_Count_Add_Src2 = /*add your code here*/ 1;
-	assign Branch_Add_Src1 = /*add your code here*/ PC_Count_Add_Result;
-	assign Branch_Add_Src2 = /*add your code here*/ Extend_Sign;
+	assign PC_Count_Add_Src1 = PC_Out;
+	assign PC_Count_Add_Src2 = 1;
+	assign Branch_Add_Src1 = PC_Count_Add_Result;
+	assign Branch_Add_Src2 = Extend_Sign;
 	
 	//Other net assignment
-	assign Branch_Select = /*add your code here*/ Branch & Zero;
+	assign Branch_Select = Branch & Zero;
 	
 endmodule
