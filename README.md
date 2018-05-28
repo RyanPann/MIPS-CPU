@@ -1,6 +1,7 @@
 # MIPS-CPU
 
 Module
+
 a. TestBench module
 “TestBench” is not a part of CPU, it is a file that controls all the program and verify the
 correctness of our CPU. The main features are: send periodical signal CLK to CPU, set the initial value of Reg and DM, print the value of Reg and DM at each cycle, finish the program.
